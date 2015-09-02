@@ -1,0 +1,33 @@
+.container{
+}
+
+.header-content{
+
+
+}
+
+.content{
+  position:static;
+
+}
+
+
+.nav-content{
+
+
+  }
+
+.aside-content{
+  float: left;
+}
+
+.article-content{
+  float: right;
+}
+
+.footer-content{
+  align-items: center;
+ position: absolute;
+  bottom: 1px;
+
+}
