@@ -1,0 +1,79 @@
+.container{
+  height:700px;
+}
+
+.container2{
+
+}
+
+header{
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 40px;
+  color: #ffffff;
+  text-align: right;
+ height:25%;
+}
+
+
+body{
+  background-image: url("bg.jpeg");
+}
+
+
+nav{
+  margin: 0;
+  padding: 0;
+  height: 50px;
+  list-style-type: none;
+  display: block;
+  background-color:gray;
+  text-align: center;
+  font-weight: bolder;
+}
+
+nav > ul > li{
+  display:inline-block;
+
+  }
+
+nav > ul >li > a:hover{
+  color: white;
+  background-color:black;
+  padding: 0.5em 0.5em;
+
+}
+
+nav > ul >li > a:link{
+  background-color: darkgray;
+  color: black;
+  padding: 0.5em 0.5em;
+
+}
+
+
+aside{
+  float: left;
+  width: 25%;
+  background-color: gray;
+
+}
+
+article{
+  color:white;
+  padding-bottom: 1px;
+  background-color: black;
+  opacity: 0.8;
+  float: right;
+  width: 75%;
+}
+
+footer{
+  color: white;
+  font-size: 6px;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  bottom: 1px;
+  
+}

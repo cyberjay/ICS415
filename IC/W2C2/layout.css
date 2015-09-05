@@ -13,9 +13,8 @@
 
 
 .nav-content{
-
-
-  }
+  text-align: center;
+}
 
 .aside-content{
   float: left;
@@ -26,8 +25,9 @@
 }
 
 .footer-content{
-  align-items: center;
+ text-align: center;
+ align-items: center;
  position: absolute;
-  bottom: 1px;
+ bottom: 1px;
 
 }
