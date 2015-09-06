@@ -3,7 +3,7 @@
 }
 
 .container2{
-
+  height: 570px;
 }
 
 header{
@@ -13,6 +13,7 @@ header{
   text-align: right;
  height:25%;
 }
+
 
 
 body{
@@ -52,19 +53,29 @@ nav > ul >li > a:link{
 
 
 aside{
+  height: 560px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+  border: solid;
+  border-color: black;
   float: left;
-  width: 25%;
+  width: 16%;
   background-color: gray;
 
 }
 
 article{
+  height: 560px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: solid;
+  border-color: white;
   color:white;
-  padding-bottom: 1px;
   background-color: black;
-  opacity: 0.8;
   float: right;
   width: 75%;
+
 }
 
 footer{
