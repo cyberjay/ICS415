@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Homework 6</title>
+  <link rel="stylesheet" href="layout.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="http://bootswatch.com/simplex/bootstrap.min.css">
+
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <img src="BS.png" class="img-responsive" style="height: inherit" width="100%">
+   </header>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">BoootStraaappp!</a>
+      </div>
+      <div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Page 1</a></li>
+          <li><a href="#">Page 2</a></li>
+          <li><a href="#">Page 3</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container2">
+    <aside class="col-md-3">
+      <h3>Sidebar</h3>
+      <p>This is a simple representation on how to use Bootstraps.</p>
+      <p>As you can see, I have use Bootstrap elements such as the tab element  and
+        combinations of the Bootstrap's column class in order to make
+        this website layout.</p>
+      <p>Due to the used of tabs in this website, the navigation bar would not be of any use
+        for this particular demonstration.</p>
+      <p>Theh second tab would show you how to use Bootstraps Forms and
+        different Input types.</p>
+      <p>Please explore all elements inside the tabs of the main page. For more information
+        about Bootstrap and its elements please visit the site below:</p>
+      <p><a href="http://www.w3schools.com/bootstrap/">http://www.w3schools.com/bootstrap/</a></p>
+    </aside>
+    <article class="col-md-9">
+      <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#home">One</a></li>
+        <li><a data-toggle="tab" href="#menu1">Two</a></li>
+
+      </ul>
+      <div class="tab-content">
+        <div id="home" class="tab-pane fade in active">
+          <div class="row">
+              <h3>What is Bootstrap?</h3>
+              <P> According to Wikipedia,  is a free and open-source collection of tools for creating websites and web applications. It contains HTML- and CSS-based design templates for typography,
+                forms, buttons, navigation and other interface components, as well as optional JavaScript extensions. It aims to ease the development of dynamic websites and web applications.
+                Bootstrap is a front end framework, that is, an interface for the user, unlike the server-side code which resides on the "back end" or server.
+                Bootstrap is the most-starred project on GitHub, with over 85,000 stars and more than 34,000 forks</P>
+              <p>Bootstrap is compatible with the latest versions of the Google Chrome, Firefox, Internet Explorer, Opera, and Safari browsers, although some of these browsers are not supported on                   all platforms.
+                Since version 2.0 it also supports responsive web design. This means the layout of web pages adjusts dynamically, taking into account the characteristics of the device used                         (desktop,tablet, mobile phone).
+                Starting with version 3.0, Bootstrap adopted a mobile first design philosophy, emphasizing responsive design by default.
+                Bootstrap is open source and available on GitHub. Developers are encouraged to participate in the project and make their own contributions to the platform.</p>
+              <p> Explore this websites and see a bunch of functions of Bootstraps.</p>
+          </div>
+        </div>
+        <div id="menu1" class="tab-pane fade">
+              <h3>Registration Page example</h3><br>
+              <form class="form-horizontal" role="form" method="get">
+                <div class="form-group">
+                  <label class="control-label col-sm-2" for="name">Name:</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="name" placeholder="Enter name here">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label col-sm-2" for="username">Username:</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="username" placeholder="Enter desired username here">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label col-sm-2" for="pwd">Password:</label>
+                  <div class="col-sm-10">
+                    <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label col-sm-2" for="email">Email:</label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="email" placeholder="Enter email">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label col-sm-2" for="bday">Birthdate:</label>
+                  <div class="col-sm-10">
+                    <input type="date" class="form-control" id="bday" placeholder="Enter Birthdate">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-default">Submit</button>
+                  </div>
+                </div>
+              </form>
+          </div>
+
+      </div>
+    </article>
+  </div>
+ <footer class="footer">
+  <h6>Copyright (c) Jaimar John Sison</h6>
+</footer>
+
+
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
