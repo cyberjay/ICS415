@@ -1,0 +1,17 @@
+
+header{
+height: 25vh;
+}
+
+nav{
+  height : 50px;
+
+}
+
+footer{
+  text-align: center;
+  position: absolute;
+  height: 50px;
+  bottom: 1px;
+
+}
