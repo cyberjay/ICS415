@@ -9,27 +9,25 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- Optional theme -->
   <link rel="stylesheet" href="http://bootswatch.com/simplex/bootstrap.min.css">
-<script src="process.html"></script>
 </head>
 <body>
 <div class="container">
   <header>
     <h1>JavaScript Exercise</h1>
   </header>
-  
-
   <main>
+
     <h1>PROCESSING INPUT...</h1>
-      <table style="width:100%">
-        <th>
-          <td>Name</td>
-          <td>Address</td>
-          <td>Phone number</td>
-        </th>
+      <table width="100%">
         <tr>
-          <td><p id="u"></p></td>
-          <td><p id="a"></p></td>
-          <td><p id="p"></p></td>
+          <th>Name</th>
+          <th>Address</th>
+          <th>Phone number</th>
+        </tr>
+        <tr ="row">
+          <td><p id ="n"></p></td>
+          <td><p id ="a"></p></td>
+          <td><p id ="p"></p></td>
         </tr>
       </table>
   </main>
@@ -39,6 +37,28 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+<script>
+  var val, start, end, name, address, phone;
+
+  val = window.location.search;
+
+  start = val.search(/=/);
+  end = val.search(/&/);
+  name = val.substring(start+1,end);
+
+  start = val.search(/address/);
+  end = val.lastIndexOf("&");
+  address = val.substring(start+17,end);
+
+  start = val.lastIndexOf("=");
+  end = val.length;
+  phone = val.substring(start+1,end);
+
+  document.getElementById('n').innerHTML = name;
+  document.getElementById('a').innerHTML = address;
+  document.getElementById('p').innerHTML = phone;
+
+</script>
 
 </body>
 </html>
