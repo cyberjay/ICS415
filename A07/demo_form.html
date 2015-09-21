@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Javaascript Exercise</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="http://bootswatch.com/simplex/bootstrap.min.css">
+
+ </head>
+<body>
+<div class="container">
+  <header>
+    <h1>Homework 07</h1>
+  </header>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">WebSiteName</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"  onclick="cl()"><a href="#">Home</a></li>
+          <li><a href="#" onclick="cl()">Page 2</a></li>
+          <li><a href="#" onclick="cl()">Page 3</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container2">
+    <aside id="1" class="col-md-3" >
+      <h3>Sidebar</h3>
+      <p> In this exercise, We are going to make the forms responsive
+        where if there is an error would prompt user.</p>
+    </aside>
+    <article class="col-md-9">
+      <h1>Forms Page</h1>
+
+      <br>
+      <br>
+      <form name="Form" action="demo_form.html" onsubmit="return validateForm(this)" method="get">
+       <p id="label"></p>
+        User name: <input type="text" id="uname" name="user"><br><br>
+        Email: <input type="email" id="emai" name="email"><br><br>
+        Pssword: <input type="password" id="pass" name="pass"><br><br>
+        Confirm Password: <input type="password" id="pass2" name="pass2"><br><br>
+        <input type="submit" value="Submit">
+
+      </form>
+
+<script>
+
+  var errorMessage = document.getElementById("label");
+  var error = false;
+  var errorstring = "";
+
+function validateForm(form){
+
+
+
+  if(form.user.value == ""){
+    form.user.style.backgroundColor="pink";
+    error = true;
+    errorstring += "Enter a Name!\n";
+  }
+
+  if(form.email.value == ""){
+    form.email.style.backgroundColor="pink";
+    error = true;
+    errorstring += "Enter an Email!\n";
+  }
+
+  if(form.pass.value == ""){
+    form.pass.style.backgroundColor="pink";
+    error = true;
+    errorstring += "Enter a Password!\n";
+  }
+
+  if(form.pass2.value == ""){
+    form.pass2.style.backgroundColor="pink";
+    error = true;
+    errorstring += "Enter a Confirm Password!\n";
+  }
+
+  if(form.pass.value != form.pass2.value){
+    error = true;
+    form.pass.style.backgroundColor="pink";
+    form.pass2.style.backgroundColor="pink";
+    errorstring += "Passwords do not match!\n";
+  }
+
+  if(error){
+    errorMessage.innerHTML = errorstring;
+    errorMessage.style.color = "red";
+    return false;
+  }
+
+  return true;
+}
+
+
+</script>
+
+
+    </article>
+  </div>
+  <footer class="footer">
+    <h6>Copyright (c) Jaimar John Sison</h6>
+  </footer>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
