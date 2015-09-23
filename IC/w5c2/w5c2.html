@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>w5c2 In Class Exercise</title>
+  <link rel="stylesheet" href="layout.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="http://bootswatch.com/simplex/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+  $("#hide").click(function(){
+  $(".container2").hide();
+  });
+  $("#show").click(function(){
+  $(".container2").show();
+  });
+    $("#ajax").click(function(){
+      $.get("http://courses.ics.hawaii.edu/ics415f15/morea/040.javascript/ic-w5c2.html", function(data, status){
+        $("#loadd").text("Data: " + data + "\nStatus: " + status);
+        alert("Data: " + data + "\nStatus: " + status);
+      });
+    });
+  });
+  </script>
+
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <h1>Jquery and AJAX exercise</h1>
+  </header>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">BoootStraaappp!</a>
+      </div>
+      <div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Page 1</a></li>
+          <li><a href="#">Page 2</a></li>
+          <li><a href="#">Page 3</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <button id="hide">Hide</button>
+  <button id="show">Show</button>
+  <button id="ajax">AJAX</button>
+ <div class="container2"><br><br>
+    <p>If you click on the "Hide" button, I will disappear.</p>
+    <h1>Load Ajax reply here: </h1>
+   <p id="loadd"></p>
+  </div>
+</div>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
